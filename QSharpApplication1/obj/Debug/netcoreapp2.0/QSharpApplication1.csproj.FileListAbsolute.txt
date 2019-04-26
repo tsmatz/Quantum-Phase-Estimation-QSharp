@@ -1,0 +1,11 @@
+C:\Demo\QSharpApplication1\QSharpApplication1\obj\Debug\netcoreapp2.0\QSharpApplication1.csproj.CoreCompileInputs.cache
+C:\Demo\QSharpApplication1\QSharpApplication1\obj\Debug\netcoreapp2.0\QSharpApplication1.AssemblyInfoInputs.cache
+C:\Demo\QSharpApplication1\QSharpApplication1\obj\Debug\netcoreapp2.0\QSharpApplication1.AssemblyInfo.cs
+C:\Demo\QSharpApplication1\QSharpApplication1\bin\Debug\netcoreapp2.0\QSharpApplication1.deps.json
+C:\Demo\QSharpApplication1\QSharpApplication1\bin\Debug\netcoreapp2.0\QSharpApplication1.runtimeconfig.json
+C:\Demo\QSharpApplication1\QSharpApplication1\bin\Debug\netcoreapp2.0\QSharpApplication1.runtimeconfig.dev.json
+C:\Demo\QSharpApplication1\QSharpApplication1\bin\Debug\netcoreapp2.0\QSharpApplication1.dll
+C:\Demo\QSharpApplication1\QSharpApplication1\bin\Debug\netcoreapp2.0\QSharpApplication1.pdb
+C:\Demo\QSharpApplication1\QSharpApplication1\obj\Debug\netcoreapp2.0\QSharpApplication1.dll
+C:\Demo\QSharpApplication1\QSharpApplication1\obj\Debug\netcoreapp2.0\QSharpApplication1.pdb
+C:\Demo\QSharpApplication1\QSharpApplication1\obj\Debug\netcoreapp2.0\QSharpApplication1.csprojAssemblyReference.cache
