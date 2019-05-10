@@ -1,57 +1,49 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "ab130478f0ff436f36540991d9e439625d280e4b"
+    "signature": "be9cad97c6c559e4c1f864fc348d4cfa1b9f9258"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "QSharpApplication1/1.0.0": {
         "dependencies": {
-          "Microsoft.Quantum.Canon": "0.5.1902.2802",
-          "Microsoft.Quantum.Development.Kit": "0.5.1902.2802"
+          "Microsoft.Quantum.Development.Kit": "0.6.1905.301",
+          "Microsoft.Quantum.Standard": "0.6.1905.301"
         },
         "runtime": {
           "QSharpApplication1.dll": {}
         }
       },
-      "Microsoft.Quantum.Canon/0.5.1902.2802": {
+      "Microsoft.Quantum.Development.Kit/0.6.1905.301": {
         "dependencies": {
-          "Microsoft.Quantum.Development.Kit": "0.5.1902.2802"
+          "Microsoft.Quantum.Simulators": "0.6.1905.301"
+        }
+      },
+      "Microsoft.Quantum.Simulators/0.6.1905.301": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Quantum.Canon.dll": {
-            "assemblyVersion": "0.5.1902.2802",
-            "fileVersion": "0.5.1902.2802"
-          }
-        }
-      },
-      "Microsoft.Quantum.Development.Kit/0.5.1902.2802": {
-        "dependencies": {
-          "Microsoft.Quantum.Simulators": "0.5.1902.2802"
-        }
-      },
-      "Microsoft.Quantum.Simulators/0.5.1902.2802": {
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Quantum.Primitives.dll": {
-            "assemblyVersion": "0.5.1902.2802",
-            "fileVersion": "0.5.1902.2802"
+          "lib/netstandard2.0/Microsoft.Quantum.Intrinsic.dll": {
+            "assemblyVersion": "0.6.1905.301",
+            "fileVersion": "0.6.1905.301"
           },
           "lib/netstandard2.0/Microsoft.Quantum.Simulation.Common.dll": {
-            "assemblyVersion": "0.5.1902.2802",
-            "fileVersion": "0.5.1902.2802"
+            "assemblyVersion": "0.6.1905.301",
+            "fileVersion": "0.6.1905.301"
           },
           "lib/netstandard2.0/Microsoft.Quantum.Simulation.Core.dll": {
-            "assemblyVersion": "0.5.1902.2802",
-            "fileVersion": "0.5.1902.2802"
+            "assemblyVersion": "0.6.1905.301",
+            "fileVersion": "0.6.1905.301"
           },
           "lib/netstandard2.0/Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.dll": {
-            "assemblyVersion": "0.5.1902.2802",
-            "fileVersion": "0.5.1902.2802"
+            "assemblyVersion": "0.6.1905.301",
+            "fileVersion": "0.6.1905.301"
           },
           "lib/netstandard2.0/Microsoft.Quantum.Simulators.dll": {
-            "assemblyVersion": "0.5.1902.2802",
-            "fileVersion": "0.5.1902.2802"
+            "assemblyVersion": "0.6.1905.301",
+            "fileVersion": "0.6.1905.301"
           }
         },
         "runtimeTargets": {
@@ -76,6 +68,25 @@
             "fileVersion": "14.11.25325.0"
           }
         }
+      },
+      "Microsoft.Quantum.Standard/0.6.1905.301": {
+        "dependencies": {
+          "Microsoft.Quantum.Development.Kit": "0.6.1905.301"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Quantum.Standard.dll": {
+            "assemblyVersion": "0.6.1905.301",
+            "fileVersion": "0.6.1905.301"
+          }
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
+          }
+        }
       }
     }
   },
@@ -85,26 +96,33 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Quantum.Canon/0.5.1902.2802": {
+    "Microsoft.Quantum.Development.Kit/0.6.1905.301": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-iHnbcl+ZAxE0m+Hg5QhfUSsy1EVr24brDWpMvf01T7Mw210Hf4h7oFW+/BTnjxk2wncCuor8Trl5fiC+M/4uUg==",
-      "path": "microsoft.quantum.canon/0.5.1902.2802",
-      "hashPath": "microsoft.quantum.canon.0.5.1902.2802.nupkg.sha512"
+      "sha512": "sha512-3OvFEt0hplb4upLVYuQqRhtxB3xrbhG7dwP9qF1NFP2U2dkcnTj84BLrMB0T2TAl8FWANf97AxlkVlZ0pRRVlw==",
+      "path": "microsoft.quantum.development.kit/0.6.1905.301",
+      "hashPath": "microsoft.quantum.development.kit.0.6.1905.301.nupkg.sha512"
     },
-    "Microsoft.Quantum.Development.Kit/0.5.1902.2802": {
+    "Microsoft.Quantum.Simulators/0.6.1905.301": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4n1/OvoLMG+NpfeSOo9nmOn/sgW599D6fCzJ3UtngR/9+oWf0PhsAJA5Kg/aIItbWkRQm/bD8/ATlQHG/eTzkA==",
-      "path": "microsoft.quantum.development.kit/0.5.1902.2802",
-      "hashPath": "microsoft.quantum.development.kit.0.5.1902.2802.nupkg.sha512"
+      "sha512": "sha512-uuE731xvDEugbw979P0nEAuUDvL1bTz3Hne0epHX6eMnRaLtSpom+ANDH+c9/SJM8DV2NyKcDmGxlPCI6IXe4g==",
+      "path": "microsoft.quantum.simulators/0.6.1905.301",
+      "hashPath": "microsoft.quantum.simulators.0.6.1905.301.nupkg.sha512"
     },
-    "Microsoft.Quantum.Simulators/0.5.1902.2802": {
+    "Microsoft.Quantum.Standard/0.6.1905.301": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2472Z1YSMZC6tpoBp+FdmDlSefYql4ZC1vun70KH7EolEm31dZ5A3S2xpzaeJre6ZJfo7i0iYfm1QfDOxy7ACw==",
-      "path": "microsoft.quantum.simulators/0.5.1902.2802",
-      "hashPath": "microsoft.quantum.simulators.0.5.1902.2802.nupkg.sha512"
+      "sha512": "sha512-KNa/qdZmbZfP/LljBHJgY6lbfLg7SaEJ31ng6Y23MIM3K42VAgTJRs+ypOJaPDfQgGai6gi0LOHf3cQFjR6Bgw==",
+      "path": "microsoft.quantum.standard/0.6.1905.301",
+      "hashPath": "microsoft.quantum.standard.0.6.1905.301.nupkg.sha512"
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "path": "newtonsoft.json/11.0.2",
+      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
     }
   }
 }

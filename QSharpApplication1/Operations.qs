@@ -1,8 +1,8 @@
 ﻿namespace Quantum.QSharpApplication1
 {
-	open Microsoft.Quantum.Extensions.Convert;
-    open Microsoft.Quantum.Primitive;
-	open Microsoft.Quantum.Extensions.Math;
+    open Microsoft.Quantum.Intrinsic;
+	open Microsoft.Quantum.Convert;
+	open Microsoft.Quantum.Math;
     
     operation QFTImpl (qs : Qubit[]) : Unit
     {
@@ -27,7 +27,7 @@
         controlled adjoint distribute;
     }
 
-	operation QuantumPhaseEstimationImpl (oracle : (Qubit[] => Unit : Adjoint, Controlled), targetState : Qubit[], controlRegister : Qubit[]) : Unit
+	operation QuantumPhaseEstimationImpl (oracle : (Qubit[] => Unit is Adj + Ctl), targetState : Qubit[], controlRegister : Qubit[]) : Unit is Adj + Ctl
     {
         body (...)
         {
@@ -49,11 +49,7 @@
             }
             
             Adjoint QFTImpl(controlRegister);
-        }
-        
-        adjoint invert;
-        controlled distribute;
-        controlled adjoint distribute;
+        }        
     }
 
 	/// This is bloackbox oracle !
@@ -68,7 +64,7 @@
         controlled adjoint distribute;
     }
 
-	operation PowerOracle (oracle : (Qubit[] => Unit : Adjoint, Controlled), targetState : Qubit[], power : Int) : Unit {
+	operation PowerOracle (oracle : (Qubit[] => Unit is Adj + Ctl), targetState : Qubit[], power : Int) : Unit is Adj + Ctl {
 
         body (...) {
 			for (idxPower in 0 .. power - 1)
@@ -76,10 +72,6 @@
 				oracle(targetState);
 			}
 		}
-
-        adjoint invert;
-        controlled distribute;
-        controlled adjoint distribute;
 	}
 
 	operation PhaseEstimationSample (eigenphase : Double) : Double {
@@ -91,8 +83,9 @@
         using ((eigenstate, phaseRegister) = (Qubit[1], Qubit[n])) {
             X(eigenstate[0]);
             QuantumPhaseEstimationImpl(oracle, eigenstate, phaseRegister);
-			let estReg = Microsoft.Quantum.Canon.MeasureIntegerBE(Microsoft.Quantum.Canon.BigEndian(phaseRegister));
-			set estPhase = 2.0 * PI() * ToDouble(estReg) / ToDouble(2 ^ n);
+			let estReg = Microsoft.Quantum.Arithmetic.MeasureInteger(
+				Microsoft.Quantum.Arithmetic.BigEndianAsLittleEndian(Microsoft.Quantum.Arithmetic.BigEndian(phaseRegister)));
+			set estPhase = 2.0 * PI() * IntAsDouble(estReg) / IntAsDouble(2 ^ n);
             Reset(eigenstate[0]);
         }
         
