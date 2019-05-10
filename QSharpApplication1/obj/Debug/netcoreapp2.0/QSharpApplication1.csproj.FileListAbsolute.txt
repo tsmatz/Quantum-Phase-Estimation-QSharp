@@ -19,3 +19,4 @@ C:\Demo\Quantum-Phase-Estimation-QSharp\QSharpApplication1\obj\Debug\netcoreapp2
 C:\Demo\Quantum-Phase-Estimation-QSharp\QSharpApplication1\obj\Debug\netcoreapp2.0\QSharpApplication1.AssemblyInfo.cs
 C:\Demo\Quantum-Phase-Estimation-QSharp\QSharpApplication1\obj\Debug\netcoreapp2.0\QSharpApplication1.dll
 C:\Demo\Quantum-Phase-Estimation-QSharp\QSharpApplication1\obj\Debug\netcoreapp2.0\QSharpApplication1.pdb
+C:\Demo\Quantum-Phase-Estimation-QSharp\QSharpApplication1\obj\Debug\netcoreapp2.0\QSharpApplication1.csprojAssemblyReference.cache
