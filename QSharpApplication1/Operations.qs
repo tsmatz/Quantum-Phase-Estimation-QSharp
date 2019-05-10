@@ -4,7 +4,7 @@
     open Microsoft.Quantum.Convert;
     open Microsoft.Quantum.Math;
     
-    operation QFTImpl (qs : Qubit[]) : Unit
+    operation QFTImpl (qs : Qubit[]) : Unit is Adj + Ctl
     {
         body (...)
         {
@@ -21,10 +21,6 @@
             
             Microsoft.Quantum.Canon.SwapReverseRegister(qs);
         }
-        
-        adjoint invert;
-        controlled distribute;
-        controlled adjoint distribute;
     }
 
     operation QuantumPhaseEstimationImpl (oracle : (Qubit[] => Unit is Adj + Ctl), targetState : Qubit[], controlRegister : Qubit[]) : Unit is Adj + Ctl
@@ -53,19 +49,13 @@
     }
 
     /// This is bloackbox oracle !
-    operation ExpOracle (eigenphase : Double, register : Qubit[]) : Unit {
-        
+    operation ExpOracle (eigenphase : Double, register : Qubit[]) : Unit is Adj + Ctl {        
         body (...) {
             Rz(2.0 * eigenphase, register[0]);
         }
-        
-        adjoint invert;
-        controlled distribute;
-        controlled adjoint distribute;
     }
 
     operation PowerOracle (oracle : (Qubit[] => Unit is Adj + Ctl), targetState : Qubit[], power : Int) : Unit is Adj + Ctl {
-
         body (...) {
             for (idxPower in 0 .. power - 1)
             {
