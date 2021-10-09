@@ -1,4 +1,4 @@
-# Q# Sample for Quantum Phase Estimation
+# Q# Example for Quantum Phase Estimation
 
 Q# provides [Microsoft.Quantum.Characterization.QuantumPhaseEstimation()](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.characterization.quantumphaseestimation?view=qsharp-preview) and you don't need to implement this algorithms by yourself.    
 This source code is only for the purpose of your learning.
