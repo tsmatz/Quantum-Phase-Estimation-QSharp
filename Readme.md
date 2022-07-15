@@ -1,4 +1,4 @@
-**Go to [here](https://github.com/tsmatz/quantum-algorithms-qsharp) for examples which runs on the latest version of QDK (Quantum Development Kit).**<br>
+**See [here](https://github.com/tsmatz/quantum-algorithms-qsharp) for examples which runs on the latest version of QDK (Quantum Development Kit).**<br>
 (This example uses QDK and standard libraries old version, v0.6.)
 
 # Q# Example for Quantum Phase Estimation
