@@ -1,3 +1,6 @@
+**Go to [here](https://github.com/tsmatz/quantum-algorithms-qsharp) for examples which runs on the latest version of QDK (Quantum Development Kit).**<br>
+This example uses QDK and standard libraries old version (v0.6).
+
 # Q# Example for Quantum Phase Estimation
 
 Q# provides [Microsoft.Quantum.Characterization.QuantumPhaseEstimation()](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.characterization.quantumphaseestimation?view=qsharp-preview) and you don't need to implement this algorithms by yourself.    
